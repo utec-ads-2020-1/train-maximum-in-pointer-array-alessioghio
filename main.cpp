@@ -10,6 +10,7 @@ using namespace std;
 
 int max(int *iptr[], int n){
     // This function returns the maximum integer pointed by the pointers in the array iptr
+    // Think/look for a better solution
     int max = 0;
     for (int i = 0; i < n; i++){
         int a = *iptr[i];
