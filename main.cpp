@@ -13,7 +13,6 @@ int max(int *iptr[], int n){
     // Think/look for a better solution
     int max = 0;
     for (int i = 0; i < n; i++){
-        int a = *iptr[i];
         if (max < *iptr[i]){
             max = *iptr[i];
         }
