@@ -8,18 +8,7 @@
 #include <iostream>
 using namespace std;
 
-int max(int *iptr[], int n){
-    // This function returns the maximum integer pointed by the pointers in the array iptr
-    // Think/look for a better solution
-    int max = 0;
-    for (int i = 0; i < n; i++){
-        if (max < *iptr[i]){
-            max = *iptr[i];
-        }
-        
-    }
-    return max;
-}
+int max(int *iptr[], int n);
 
 int main() {
     int n, i;
@@ -33,4 +22,17 @@ int main() {
     cout << "Max number: " << max(iptr,n) << endl;
 
     return 0;
+}
+
+int max(int *iptr[], int n){
+    // This function returns the maximum integer pointed by the pointers in the array iptr
+    // Think/look for a better solution
+    int max = *iptr[0];
+    for (int i = 0; i < n; i++){
+        if (max < *iptr[i]){
+            max = *iptr[i];
+        }
+        
+    }
+    return max;
 }
